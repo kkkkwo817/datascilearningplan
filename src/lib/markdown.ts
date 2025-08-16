@@ -8,7 +8,7 @@ export interface DocContent {
   title?: string;
 }
 
-const docsDirectory = path.join(process.cwd(), '..', 'data-science-lab');
+const docsDirectory = path.join(process.cwd(), 'public', 'data-science-lab');
 
 export async function getDocContent(slug: string[]): Promise<DocContent | null> {
   try {
